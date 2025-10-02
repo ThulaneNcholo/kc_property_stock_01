@@ -1,0 +1,643 @@
+{% load static %}
+<section class="hero_background d-flex align-items-center">
+  <!-- ======= Navbar  ======= -->
+  <div>{% include 'partials/navbar.html' %}</div>
+
+  <!-- ======= Hero content  ======= -->
+  <div class="container" style="padding-top: 100px">
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <h3 class="hero_title center">
+          Find Your Perfect Home with
+          <span class="hero_title_color">KC Property Stock</span>
+        </h3>
+        <p class="text-light mt-4 hero_text center">
+          Based in Dawn Park, KC Property Stock connects buyers, sellers, and
+          renters with the best real estate opportunities. Whether you’re
+          selling, renting out, or looking for your dream property, our team
+          ensures a seamless and professional experience.
+        </p>
+
+        <div class="row mt-5">
+          <div class="col-12 col-md-4 mb-3">
+            <button
+              type="button"
+              class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
+            >
+              List My Home for Sale<i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <button
+              type="button"
+              class="btn btn-light light_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
+            >
+              List My Rental Property<i
+                class="bi bi-arrow-right-circle-fill"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= About  ======= -->
+<section class="container section_spacing">
+  <div class="row">
+    <div class="col-12 col-lg-6 mb-4">
+      <div class="about_image"></div>
+    </div>
+    <div class="col-12 col-lg-6 mb-4">
+      <p class="section_sub_title mb-4">ABOUT KC PROPERTY STOCK</p>
+      <h1 class="section_title mb-4">
+        Your Trusted <span class="title_color">Real Estate Partner</span>
+        in Dawn Park
+      </h1>
+      <p class="text_color">
+        At KC Property Stock, we are passionate about helping individuals and
+        families find properties that match their lifestyle and budget. Serving
+        the Dawn Park and greater Johannesburg area, we specialize in property
+        sales, rentals, and marketing for homeowners. Our mission is simple: to
+        make property transactions transparent, stress-free, and rewarding for
+        both sellers and buyers. With in-depth local market knowledge, we are
+        your trusted partner in every real estate journey.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Services  ======= -->
+<section class="container section_spacing">
+  <div class="row">
+    <div class="col-12 col-md-4 mb-4">
+      <div class="service_card h-100 p-4">
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col">
+            <h5 class="service_title mb-0">Properties for Buyers & Renters</h5>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <div class="service_icon_container">
+              <span class="material-symbols-outlined service_icon">
+                house
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr class="my-3" />
+        <p class="text_color mt-4 mb-4">
+          Browse a wide selection of homes, apartments, and rental properties in
+          Dawn Park and surrounding neighborhoods. From first-time buyers to
+          growing families, we help you find a property that suits your needs.
+        </p>
+        <button
+          type="button"
+          class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-3 border-0 px-3 py-2"
+        >
+          View Properties<i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </div>
+    </div>
+    <!-- end card  -->
+    <div class="col-12 col-md-4 mb-4">
+      <div class="service_card h-100 p-4">
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col">
+            <h5 class="service_title mb-0">List Your Home for Sale</h5>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <div class="service_icon_container">
+              <span class="material-symbols-outlined service_icon">
+                real_estate_agent
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr class="my-3" />
+        <p class="text_color mt-4 mb-4">
+          Selling your property has never been easier. With KC Property Stock,
+          your home gets maximum exposure through our marketing strategies,
+          professional listings, and dedicated agents. We connect you with
+          serious buyers quickly.
+        </p>
+        <button
+          type="button"
+          class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-3 border-0 px-3 py-2"
+        >
+          List Property<i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </div>
+    </div>
+    <!-- end card  -->
+    <div class="col-12 col-md-4 mb-4">
+      <div class="service_card h-100 p-4">
+        <div class="row d-flex align-items-center mb-5">
+          <div class="col">
+            <h5 class="service_title mb-0">List Your Rental Property:</h5>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <div class="service_icon_container">
+              <span class="material-symbols-outlined service_icon">
+                domain
+              </span>
+            </div>
+          </div>
+        </div>
+        <hr class="my-3" />
+        <p class="text_color mt-4 mb-4">
+          If you own rental property, we help you find reliable tenants fast.
+          Our team handles marketing, listings, and tenant screening so you can
+          enjoy stress-free rental income.
+        </p>
+        <button
+          type="button"
+          class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-3 border-0 px-3 py-2"
+        >
+          List Rental<i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </div>
+    </div>
+    <!-- end card  -->
+  </div>
+</section>
+
+<!-- ======= List Property  ======= -->
+<section class="section_spacing container-fluid">
+  <div class="list_container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4">
+          <h1 class="section_title mb-4 text-light" style="line-height: 65px">
+            Sell Your Home with
+            <span class="title_color">KC Property</span> Stock
+          </h1>
+          <h5 class="list_title mb-4 mt-5" style="line-height: 35px">
+            Get the Best Value for Your Property
+          </h5>
+          <p class="text-light paragraph_text">
+            Ready to sell? Share your property details with us and we’ll take
+            care of the rest. From professional listings to attracting qualified
+            buyers, KC Property Stock ensures your property sells at the right
+            price in the shortest time.
+          </p>
+          <i class="bi bi-arrow-right-circle-fill list_arrow_icon"></i>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+          <form action="">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Full Name"
+                  />
+                  <label for="floatingInput">Full Name</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Phone Number"
+                  />
+                  <label for="floatingInput">Phone Number</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <!-- end input  -->
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Street"
+                  />
+                  <label for="floatingInput">Street</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Suburb"
+                  />
+                  <label for="floatingInput">Suburb</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="City/Town"
+                  />
+                  <label for="floatingInput">City/Town</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Province"
+                  />
+                  <label for="floatingInput">Province</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Postal Code"
+                  />
+                  <label for="floatingInput">Postal Code</label>
+                </div>
+                <!-- end input  -->
+              </div>
+            </div>
+            <center>
+              <button
+                class="btn btn-dark submit_form_btn mt-4 py-3 rounded-pill d-flex align-items-center d-flex justify-content-center gap-3 border-0"
+              >
+                Submit <i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </center>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= List Rental Property  ======= -->
+<section class="container-fluid section_spacing">
+  <div class="review_container" style="border-radius: 10px">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4 order-md-2">
+          <h1 class="section_title mb-4" style="line-height: 65px">
+            List Your <span class="title_color">Rental Property</span> Today
+          </h1>
+          <h5
+            class="list_title mb-4 mt-5 dark_blue_text"
+            style="line-height: 35px"
+          >
+            Find the Perfect Tenant with Ease
+          </h5>
+          <p style="color: #5c5e5e">
+            Let us help you maximize your rental property’s potential. Submit
+            your details and our team will market your rental to prospective
+            tenants, ensuring faster occupancy and consistent rental income.
+          </p>
+          <i
+            class="bi bi-arrow-left-circle-fill list_arrow_icon rentals_icon"
+          ></i>
+        </div>
+        <div class="col-12 col-md-6 mb-4 order-md-1">
+          <form action="">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Full Name"
+                  />
+                  <label for="floatingInput">Full Name</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Phone Number"
+                  />
+                  <label for="floatingInput">Phone Number</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <!-- end input  -->
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Street"
+                  />
+                  <label for="floatingInput">Street</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Suburb"
+                  />
+                  <label for="floatingInput">Suburb</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="City/Town"
+                  />
+                  <label for="floatingInput">City/Town</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Province"
+                  />
+                  <label for="floatingInput">Province</label>
+                </div>
+                <!-- end input  -->
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control form_style"
+                    id="floatingInput"
+                    placeholder="Postal Code"
+                  />
+                  <label for="floatingInput">Postal Code</label>
+                </div>
+                <!-- end input  -->
+              </div>
+            </div>
+            <center>
+              <button
+                class="btn btn-dark submit_form_btn mt-4 py-3 rounded-pill d-flex align-items-center d-flex justify-content-center gap-3 border-0"
+              >
+                Submit <i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </center>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Property Listings  ======= -->
+<section class="container section_spacing">
+  <center>
+    <p class="section_sub_title text-uppercase">Find Your Dream Property</p>
+    <h1 class="section_title browse_properties mb-4">
+      Browse Homes,
+      <span class="title_color">Apartments & Rentals</span> Properties
+    </h1>
+    <p class="text_color mb-5">
+      Explore our curated list of homes for sale and rental properties. With new
+      listings updated regularly, KC Property Stock makes it easy to find a
+      place that feels like home.
+    </p>
+  </center>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-12 col-md-4 col-lg-3 mb-4">
+      <div>
+        <img
+          src="{% static '/images/image_03.jpg' %}"
+          alt=""
+          class="property_image"
+        />
+        <div class="px-3 property_card py-4">
+          <h5 class="property_title">
+            <i class="bi bi-geo-alt-fill"></i> Dawn Park,Boksburg
+          </h5>
+          <p class="text_color">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            voluptate.
+          </p>
+          <button
+            type="button"
+            class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-2 border-0"
+            style="font-weight: 400 !important"
+          >
+            View<i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end col item  -->
+    <div class="col-12 col-md-4 col-lg-3 mb-4">
+      <div>
+        <img
+          src="{% static '/images/image_03.jpg' %}"
+          alt=""
+          class="property_image"
+        />
+        <div class="px-3 property_card py-4">
+          <h5 class="property_title">
+            <i class="bi bi-geo-alt-fill"></i> Dawn Park,Boksburg
+          </h5>
+          <p class="text_color">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            voluptate.
+          </p>
+          <button
+            type="button"
+            class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-2 border-0"
+            style="font-weight: 400 !important"
+          >
+            View<i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end col item  -->
+    <div class="col-12 col-md-4 col-lg-3 mb-4">
+      <div>
+        <img
+          src="{% static '/images/image_03.jpg' %}"
+          alt=""
+          class="property_image"
+        />
+        <div class="px-3 property_card py-4">
+          <h5 class="property_title">
+            <i class="bi bi-geo-alt-fill"></i> Dawn Park,Boksburg
+          </h5>
+          <p class="text_color">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            voluptate.
+          </p>
+          <button
+            type="button"
+            class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-2 border-0"
+            style="font-weight: 400 !important"
+          >
+            View<i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end col item  -->
+  </div>
+</section>
+
+<!-- ======= Banner  ======= -->
+<section class="section_spacing container-fluid">
+  <div class="banner d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6">
+          <h1 class="hero_title">
+            Let’s Talk
+            <span class="hero_title_color">About Your</span> Next Move
+          </h1>
+          <p class="text-light mt-4 hero_text paragraph_text">
+            Whether you’re buying, selling, or renting, KC Property Stock is
+            here to help. Contact our Dawn Park office today and let’s get
+            started on your real estate journey.
+          </p>
+
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3 mb-3">
+              <button
+                type="button"
+                class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
+              >
+                Contact Us<i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-3">
+              <button
+                type="button"
+                class="btn btn-light light_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
+              >
+                061 480 9173<i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Reviews  ======= -->
+<section class="review_container">
+  <div class="container">
+    <center>
+      <p class="section_sub_title text-uppercase">What Our Clients Say</p>
+      <h1 class="section_title mb-4">
+        Trusted by <span class="title_color">Property Owners</span> and Buyers
+      </h1>
+      <p class="text_color mb-5">
+        At KC Property Stock, client satisfaction is our top priority. Here’s
+        what our happy customers have to say about working with us:
+      </p>
+    </center>
+
+    <div class="row" style="margin-top: 70px">
+      <div class="col-12 col-md-4 mb-5">
+        <div class="service_card h-100 p-4">
+          <center>
+            <div
+              class="service_icon_container review_icon_container mb-4 border border-2 border-light"
+            >
+              <span class="material-symbols-outlined service_icon"> chat </span>
+            </div>
+            <p>
+              As a first-time homebuyer, I was nervous and unsure about the
+              process, but KC Property Stock really went above and beyond to
+              guide me. They explained everything clearly, showed me properties
+              within my budget, and made sure I was comfortable before making my
+              final decision. Thanks to them, I’m now living in a home I
+              absolutely love.
+            </p>
+
+            <hr class="my-5" />
+            <h6 class="review_name">Nomsa Dlamini</h6>
+          </center>
+        </div>
+      </div>
+      <!-- end col item  -->
+      <div class="col-12 col-md-4 mb-5">
+        <div class="service_card h-100 p-4">
+          <center>
+            <div
+              class="service_icon_container review_icon_container mb-4 border border-2 border-light"
+            >
+              <span class="material-symbols-outlined service_icon"> chat </span>
+            </div>
+            <p>
+              KC Property Stock helped me sell my home in Dawn Park faster than
+              I expected. Their team handled everything, from the listing photos
+              to connecting me with serious buyers. I really appreciated how
+              professional and honest they were throughout the process. It felt
+              like I had a partner by my side every step of the way.
+            </p>
+
+            <hr class="my-5" />
+            <h6 class="review_name">Lerato Mokoena</h6>
+          </center>
+        </div>
+      </div>
+      <!-- end col item  -->
+      <div class="col-12 col-md-4 mb-5">
+        <div class="service_card h-100 p-4">
+          <center>
+            <div
+              class="service_icon_container review_icon_container mb-4 border border-2 border-light"
+            >
+              <span class="material-symbols-outlined service_icon"> chat </span>
+            </div>
+            <p>
+              I listed my rental property with KC Property Stock and within just
+              a week, they had already found me a reliable tenant. They took
+              care of all the paperwork and even helped me with tenant
+              screening, which saved me a lot of time and stress. Now I have a
+              steady rental income without worrying about the day-to-day
+              hassles.
+            </p>
+
+            <hr class="my-5" />
+            <h6 class="review_name">Thabo Nkosi</h6>
+          </center>
+        </div>
+      </div>
+      <!-- end col item  -->
+    </div>
+  </div>
+</section>
+
+<!-- ======= Footer  ======= -->
+<section>
+  <div>{% include 'partials/footer.html' %}</div>
+</section>
