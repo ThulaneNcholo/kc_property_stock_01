@@ -1,0 +1,285 @@
+{% load static %}
+<!-- ======= Navbar  ======= -->
+<section>
+  <div>{% include 'partials/dark_navbar.html' %}</div>
+</section>
+
+<!-- ======= Header Container  ======= -->
+<section class="page_header_container overflow_content">
+  <center>
+    <h1
+      class="header_title"
+      data-aos="fade-right"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      For Sellers
+    </h1>
+  </center>
+</section>
+
+<!-- ======= About Header Section  ======= -->
+<section class="container section_spacing overflow_content">
+  <center>
+    <p
+      class="section_sub_title mb-0 text-uppercase"
+      data-aos="fade-right"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      Sell Your Property
+    </p>
+  </center>
+</section>
+
+<!-- ======= Sellers Info  ======= -->
+<section class="container mt-4 overflow_content">
+  <center>
+    <h1
+      class="about_title"
+      style="margin-bottom: 100px"
+      data-aos="fade-right"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      Find Your Ideal Real Estate
+      <span class="about_secondary_title">Sales Agency</span>
+    </h1>
+  </center>
+  <div class="row overflow_content">
+    <div class="col-12 col-md-4 mb-4">
+      <div
+        class="seller_image"
+        data-aos="fade-right"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <div class="d-flex justify-content-end">
+          <div class="seller_deco_card"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-8 mb-4">
+      <h1
+        class="about_title mb-4"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        Sell Your Property with Confidence
+      </h1>
+      <p data-aos="fade-left" data-aos-delay="50" data-aos-duration="1000">
+        Looking to sell your home? KC Property Stock connects you with
+        experienced real estate agencies that specialize in your neighbourhood
+        and property type.
+      </p>
+      <h4
+        class="about_secondary_title mt-5 mb-4"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        Why choose us:
+      </h4>
+      <div
+        class="d-flex align-items-center gap-3 mb-3"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <i class="bi bi-arrow-right-circle-fill choose_icon"></i>
+        <p class="mb-0">
+          Access to vetted, high-performing real estate agencies
+        </p>
+      </div>
+      <!-- end item  -->
+      <div
+        class="d-flex align-items-center gap-3 mb-3"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <i class="bi bi-arrow-right-circle-fill choose_icon"></i>
+        <p class="mb-0">Save time researching multiple agents</p>
+      </div>
+      <!-- end item  -->
+      <div
+        class="d-flex align-items-center gap-3 mb-3"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <i class="bi bi-arrow-right-circle-fill choose_icon"></i>
+        <p class="mb-0">Increase your chances of a quick, successful sale</p>
+      </div>
+      <!-- end item  -->
+    </div>
+  </div>
+</section>
+
+<!-- ======= Sellers Form  ======= -->
+<section class="container section_spacing overflow_content">
+  <center>
+    <h1
+      class="about_title mb-3"
+      data-aos="fade-right"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      Start your journey <span class="about_secondary_title">today</span>
+    </h1>
+    <p data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+      Fill out the form below and we’ll connect you to the right real estate
+      agent for your property
+    </p>
+  </center>
+
+  <div class="row d-flex justify-content-center mt-5">
+    <div class="col-12 col-lg-8 overflow_content">
+      <form action="">
+        {% csrf_token %}
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div
+              class="form-floating mb-3"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <input
+                type="text"
+                class="form-control form_style"
+                id="floatingInput"
+                placeholder="Full Name"
+              />
+              <label for="floatingInput">Full Name</label>
+            </div>
+            <!-- end input  -->
+            <div
+              class="form-floating mb-3"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <input
+                type="number"
+                class="form-control form_style"
+                id="floatingInput"
+                placeholder="Phone Number"
+              />
+              <label for="floatingInput">Phone Number</label>
+            </div>
+            <!-- end input  -->
+            <div
+              class="form-floating mb-3"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <input
+                type="email"
+                class="form-control form_style"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <!-- end input  -->
+          </div>
+          <div class="col-12 col-md-6">
+            <div
+              class="form-floating mb-3"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <input
+                type="text"
+                class="form-control form_style"
+                id="floatingInput"
+                placeholder="Street"
+              />
+              <label for="floatingInput">Street</label>
+            </div>
+            <!-- end input  -->
+            <div
+              class="form-floating mb-3"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <input
+                type="text"
+                class="form-control form_style"
+                id="floatingInput"
+                placeholder="Suburb"
+              />
+              <label for="floatingInput">Suburb</label>
+            </div>
+            <!-- end input  -->
+            <div
+              class="form-floating mb-3"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <input
+                type="text"
+                class="form-control form_style"
+                id="floatingInput"
+                placeholder="City/Town"
+              />
+              <label for="floatingInput">City/Town</label>
+            </div>
+            <!-- end input  -->
+            <div
+              class="form-floating mb-3"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <input
+                type="text"
+                class="form-control form_style"
+                id="floatingInput"
+                placeholder="Province"
+              />
+              <label for="floatingInput">Province</label>
+            </div>
+            <!-- end input  -->
+            <div
+              class="form-floating mb-3"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <input
+                type="text"
+                class="form-control form_style"
+                id="floatingInput"
+                placeholder="Postal Code"
+              />
+              <label for="floatingInput">Postal Code</label>
+            </div>
+            <!-- end input  -->
+          </div>
+        </div>
+        <center>
+          <button
+            class="btn btn-dark submit_form_btn mt-4 py-3 rounded-pill d-flex align-items-center d-flex justify-content-center gap-3 border-0"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            Submit <i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </center>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Footer  ======= -->
+<section class="section_spacing">
+  <div>{% include 'partials/footer.html' %}</div>
+</section>

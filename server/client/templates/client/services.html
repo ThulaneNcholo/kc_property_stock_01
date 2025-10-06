@@ -1,0 +1,154 @@
+{% load static %}
+<!-- ======= Navbar  ======= -->
+<section>
+  <div>{% include 'partials/dark_navbar.html' %}</div>
+</section>
+
+<!-- ======= Header Container  ======= -->
+<section class="page_header_container overflow_content">
+  <center>
+    <h1
+      class="header_title"
+      data-aos="fade-right"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      Our Services
+    </h1>
+  </center>
+</section>
+
+<!-- ======= About Header Section  ======= -->
+<section class="container section_spacing overflow_content">
+  <p
+    class="section_sub_title mb-3 text-uppercase"
+    data-aos="fade-right"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+  >
+    Discover our Services
+  </p>
+  <h1
+    class="about_title mb-4"
+    data-aos="fade-right"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+  >
+    Connecting You to the Right
+    <span class="about_secondary_title">Real Estate Agencies</span>
+  </h1>
+</section>
+
+<!-- ======= Services Section  ======= -->
+<section class="container mt-5">
+  <div class="row overflow_content">
+    <div
+      class="col-12 col-md-4 mb-4"
+      data-aos="zoom-in"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      <div class="services_page_card h-100 border p-3">
+        <img
+          class="service_page_card_img"
+          src="{% static '/images/service_sale.jpg' %}"
+          alt=""
+        />
+        <i
+          class="bi bi-arrow-up-right-circle-fill services_arrow_icon my-3 d-flex justify-content-end"
+        ></i>
+        <h5 class="services_page_title mt-4">Property Sales Agents</h5>
+        <hr class="my-3" />
+        <p class="text-secondary">
+          We match homeowners with top-performing real estate sales agencies
+          that understand their area and know how to market effectively. Our
+          introductions save you time and increase your chance of a successful
+          sale.
+        </p>
+
+        <center>
+          <a href="{% url 'sellers' %}">
+            <button
+              class="btn btn-dark d-flex gap-2 primary_btn rounded-pill py-2 my-4 border-0 px-3"
+            >
+              Find Sales Agent <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+          </a>
+        </center>
+      </div>
+    </div>
+    <!-- end card item  -->
+    <div
+      class="col-12 col-md-4 mb-4"
+      data-aos="zoom-in"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      <div class="services_page_card h-100 border p-3">
+        <img
+          class="service_page_card_img"
+          src="{% static '/images/service_rental.png' %}"
+          alt=""
+        />
+        <i
+          class="bi bi-arrow-up-right-circle-fill services_arrow_icon my-3 d-flex justify-content-end"
+        ></i>
+        <h5 class="services_page_title mt-4">Rental Agents</h5>
+        <hr class="my-3" />
+        <p class="text-secondary">
+          We help landlords find reliable letting agencies who manage the entire
+          rental process, from tenant placement to property handover.
+        </p>
+
+        <center>
+          <a href="{% url 'rental-agent' %}">
+            <button
+              class="btn btn-dark d-flex gap-2 primary_btn rounded-pill py-2 my-4 border-0 px-3"
+            >
+              Find Rental Agent <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+          </a>
+        </center>
+      </div>
+    </div>
+    <!-- end card item  -->
+    <div
+      class="col-12 col-md-4 mb-4"
+      data-aos="zoom-in"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      <div class="services_page_card h-100 border p-3">
+        <img
+          class="service_page_card_img"
+          src="{% static '/images/service_property.jpg' %}"
+          alt=""
+        />
+        <i
+          class="bi bi-arrow-up-right-circle-fill services_arrow_icon my-3 d-flex justify-content-end"
+        ></i>
+        <h5 class="services_page_title mt-4">Property Discovery</h5>
+        <hr class="my-3" />
+        <p class="text-secondary">
+          Looking to buy or rent? Browse properties from our network of partner
+          agencies and find a home that suits your needs.
+        </p>
+
+        <center>
+          <a href="{% url 'properties' %}">
+            <button
+              class="btn btn-dark d-flex gap-2 primary_btn rounded-pill py-2 my-4 border-0 px-3"
+            >
+              Find A Property <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+          </a>
+        </center>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Footer  ======= -->
+<section class="section_spacing">
+  <div>{% include 'partials/footer.html' %}</div>
+</section>

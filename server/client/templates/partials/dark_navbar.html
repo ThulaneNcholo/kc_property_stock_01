@@ -1,5 +1,5 @@
 <nav
-  class="navbar navbar-expand-lg navbar-light bg-light navbar_style pb-3 pt-4 fixed-top bg-transparent navbar-main"
+  class="navbar navbar-expand-lg navbar-light bg-light pb-3 pt-4 fixed-top dark_navbar"
 >
   <div class="container d-flex align-items-center">
     <a class="navbar-brand" href="{% url 'index' %}">
@@ -22,7 +22,7 @@
           <a
             class="nav-link active navbar_links d-flex align-items-center gap-1"
             aria-current="page"
-            href="#"
+            href="{% url 'index' %}"
             >Home
           </a>
         </li>

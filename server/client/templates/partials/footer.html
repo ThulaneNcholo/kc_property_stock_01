@@ -1,10 +1,21 @@
 <div class="footer_container">
-  <div class="container">
+  <div class="container overflow_content">
     <center>
-      <h1 class="list_title mb-4" style="line-height: 50px">
+      <h1
+        class="list_title mb-4"
+        style="line-height: 50px"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
         Join Our <span class="list_primary_color">Newsletter</span>
       </h1>
-      <h1 class="list_title mb-5">
+      <h1
+        class="list_title mb-5"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
         <span class="list_primary_color">Stay Up To</span> Date
       </h1>
     </center>
@@ -48,12 +59,27 @@
           Quick <span class="navbar_title_span">Links</span>
         </h4>
         <hr class="text-light my-4" />
-        <h5 class="footer_links mb-2">Home</h5>
-        <h5 class="footer_links mb-2">About Us</h5>
-        <h5 class="footer_links mb-2">List Property</h5>
-        <h5 class="footer_links mb-2">List Rental</h5>
-        <h5 class="footer_links mb-2">Properties</h5>
-        <h5 class="footer_links mb-2">Contact Us</h5>
+        <a href="{% url 'index' %}">
+          <h5 class="footer_links mb-2">Home</h5>
+        </a>
+        <a href="{% url 'about-us' %}">
+          <h5 class="footer_links mb-2">About Us</h5>
+        </a>
+        <a href="{% url 'sellers' %}">
+          <h5 class="footer_links mb-2">Sales Agent</h5>
+        </a>
+        <a href="{% url 'rental-agent' %}">
+          <h5 class="footer_links mb-2">Rental Agent</h5>
+        </a>
+        <a href="{% url 'properties' %}">
+          <h5 class="footer_links mb-2">Properties</h5>
+        </a>
+        <a href="{% url 'services' %}">
+          <h5 class="footer_links mb-2">Services</h5>
+        </a>
+        <a href="{% url 'contact-us' %}">
+          <h5 class="footer_links mb-2">Contact Us</h5>
+        </a>
       </div>
       <div class="col-12 col-md-4 mb-5">
         <h4 class="navbar_title mb-4">

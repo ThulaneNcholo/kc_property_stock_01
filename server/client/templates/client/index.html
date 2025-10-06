@@ -6,38 +6,51 @@
   <!-- ======= Hero content  ======= -->
   <div class="container" style="padding-top: 100px">
     <div class="row">
-      <div class="col-12 col-lg-8">
-        <h1 class="hero_title center">
-          Find Your Ideal
-          <span class="hero_title_color d-none">Estate</span> Agency with
+      <div class="col-12 col-lg-8 overflow_content">
+        <h1
+          class="hero_title center"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+        >
+          Find Your Ideal Real Estate Agency with
           <span class="hero_title_color">KC Property Stock</span>
         </h1>
-        <!-- <p class="text-light mt-4 hero_text center">
-          KC Property Stock makes it easy for property owners to connect with
-          trusted real estate agencies, whether selling or renting.
-        </p> -->
-
-        <p class="text-light mt-4 hero_text center">
+        <p
+          class="text-light mt-4 hero_text center"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1300"
+        >
           KC Property Stock makes it simple for property owners to connect with
           trusted real estate agencies, whether you’re selling or renting.
         </p>
 
-        <div class="row mt-5">
+        <div
+          class="row mt-5"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1400"
+        >
           <div class="col-12 col-md-4 mb-3">
-            <button
-              type="button"
-              class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
-            >
-              Find Sales Agent<i class="bi bi-arrow-right-circle-fill"></i>
-            </button>
+            <a href="{% url 'sellers' %}">
+              <button
+                type="button"
+                class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
+              >
+                Find Sales Agent<i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </a>
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <button
-              type="button"
-              class="btn btn-light light_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
-            >
-              Find Rental Agent<i class="bi bi-arrow-right-circle-fill"></i>
-            </button>
+            <a href="{% url 'rental-agent' %}">
+              <button
+                type="button"
+                class="btn btn-light light_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
+              >
+                Find Rental Agent<i class="bi bi-arrow-right-circle-fill"></i>
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -48,16 +61,37 @@
 <!-- ======= About  ======= -->
 <section class="container section_spacing">
   <div class="row">
-    <div class="col-12 col-lg-6 mb-4">
-      <div class="about_image"></div>
+    <div class="col-12 col-lg-6 mb-4 overflow_content">
+      <div
+        class="about_image"
+        data-aos="fade-right"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      ></div>
     </div>
-    <div class="col-12 col-lg-6 mb-4">
-      <p class="section_sub_title mb-4">ABOUT KC PROPERTY STOCK</p>
-      <h1 class="section_title mb-4">
-        Connecting Sellers & Landlords with
-        <span class="title_color">The Right Agents</span>
+    <div class="col-12 col-lg-6 mb-4 overflow_content">
+      <p
+        class="section_sub_title mb-4"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        ABOUT KC PROPERTY STOCK
+      </p>
+      <h1
+        class="section_title mb-4"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        Your Trusted <span class="title_color">Real Estate Partner</span>
       </h1>
-      <p class="text_color">
+      <p
+        class="text_color"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
         We match property sellers and landlords with real estate agents that fit
         their needs, helping you save time and achieve a smooth, successful sale
         or rental.
@@ -69,7 +103,7 @@
 <!-- ======= Services Remove ======= -->
 <section class="container section_spacing d-none">
   <div class="row">
-    <div class="col-12 col-md-4 mb-4">
+    <div class="col-12 col-md-4 mb-4 overflow_content">
       <div class="service_card h-100 p-4">
         <div class="row d-flex align-items-center mb-5">
           <div class="col">
@@ -165,27 +199,42 @@
   <div class="list_container">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 mb-4">
-          <h1 class="section_title mb-4 text-light">
-            Find Your Ideal Agency With
+        <div class="col-12 col-md-6 mb-4 overflow_content">
+          <h1
+            class="section_title mb-4 text-light"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
+            Find Your Ideal Estate Agency With
             <span class="title_color">KC Property</span> Stock
           </h1>
           <!-- <h5 class="list_title mb-4 mt-5" >
             Get the Best Value for Your Property
           </h5> -->
-          <p class="text-light paragraph_text">
+          <p
+            class="text-light paragraph_text"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             Complete a quick form. KC Property Stock will recommend real estate
             agents with proven track records, so you can choose the one that
             best fits your needs.
           </p>
           <i class="bi bi-arrow-right-circle-fill list_arrow_icon"></i>
         </div>
-        <div class="col-12 col-md-6 mb-4">
+        <div class="col-12 col-md-6 mb-4 overflow_content">
           <form action="">
             {% csrf_token %}
             <div class="row">
               <div class="col-12 col-md-6">
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -195,7 +244,12 @@
                   <label for="floatingInput">Full Name</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="number"
                     class="form-control form_style"
@@ -205,7 +259,12 @@
                   <label for="floatingInput">Phone Number</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="email"
                     class="form-control form_style"
@@ -217,7 +276,12 @@
                 <!-- end input  -->
               </div>
               <div class="col-12 col-md-6">
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -227,7 +291,12 @@
                   <label for="floatingInput">Street</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -237,7 +306,12 @@
                   <label for="floatingInput">Suburb</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -247,7 +321,12 @@
                   <label for="floatingInput">City/Town</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -257,7 +336,12 @@
                   <label for="floatingInput">Province</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -272,6 +356,9 @@
             <center>
               <button
                 class="btn btn-dark submit_form_btn mt-4 py-3 rounded-pill d-flex align-items-center d-flex justify-content-center gap-3 border-0"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
               >
                 Submit <i class="bi bi-arrow-right-circle-fill"></i>
               </button>
@@ -288,14 +375,29 @@
   <div class="review_container" style="border-radius: 10px">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 mb-4 order-md-2">
-          <h1 class="section_title mb-4">
+        <div class="col-12 col-md-6 mb-4 order-md-2 overflow_content">
+          <h1
+            class="section_title mb-4"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             List Your <span class="title_color">Rental Property</span> Today
           </h1>
-          <h5 class="list_title mb-4 mt-5 dark_blue_text d-none">
+          <h5
+            class="list_title mb-4 mt-5 dark_blue_text d-none"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             Find the Perfect Tenant with Ease
           </h5>
-          <p style="color: #5c5e5e">
+          <p
+            style="color: #5c5e5e"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             Provide your contact details and property location, and KC Property
             Stock will connect you with ideal letting agencies to help you rent
             your property quickly and securely.
@@ -304,12 +406,17 @@
             class="bi bi-arrow-left-circle-fill list_arrow_icon rentals_icon"
           ></i>
         </div>
-        <div class="col-12 col-md-6 mb-4 order-md-1">
+        <div class="col-12 col-md-6 mb-4 order-md-1 overflow_content">
           <form action="">
             {% csrf_token %}
             <div class="row">
               <div class="col-12 col-md-6">
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -319,7 +426,12 @@
                   <label for="floatingInput">Full Name</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="number"
                     class="form-control form_style"
@@ -329,7 +441,12 @@
                   <label for="floatingInput">Phone Number</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="email"
                     class="form-control form_style"
@@ -341,7 +458,12 @@
                 <!-- end input  -->
               </div>
               <div class="col-12 col-md-6">
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -351,7 +473,12 @@
                   <label for="floatingInput">Street</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -361,7 +488,12 @@
                   <label for="floatingInput">Suburb</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -371,7 +503,12 @@
                   <label for="floatingInput">City/Town</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -381,7 +518,12 @@
                   <label for="floatingInput">Province</label>
                 </div>
                 <!-- end input  -->
-                <div class="form-floating mb-3">
+                <div
+                  class="form-floating mb-3"
+                  data-aos="zoom-in"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                >
                   <input
                     type="text"
                     class="form-control form_style"
@@ -396,6 +538,9 @@
             <center>
               <button
                 class="btn btn-dark submit_form_btn mt-4 py-3 rounded-pill d-flex align-items-center d-flex justify-content-center gap-3 border-0"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+                data-aos-duration="1000"
               >
                 Submit <i class="bi bi-arrow-right-circle-fill"></i>
               </button>
@@ -408,21 +553,34 @@
 </section>
 
 <!-- ======= Property Listings  ======= -->
-<section class="container section_spacing">
+<section class="container section_spacing overflow_content">
   <center>
-    <p class="section_sub_title text-uppercase">Find Your Dream Property</p>
-    <h1 class="section_title browse_properties mb-5">
+    <p
+      class="section_sub_title text-uppercase"
+      data-aos="fade-right"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      Find Your Dream Property
+    </p>
+    <h1
+      class="section_title browse_properties mb-5"
+      data-aos="fade-right"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
       Browse For Sale Homes,
       <span class="title_color">Apartments & Rentals</span> Properties
     </h1>
-    <p class="text_color mb-5 d-none">
-      Browse our homes for sale and rent, and find your ideal property with
-      ease.
-    </p>
   </center>
 
-  <div class="row d-flex justify-content-center">
-    <div class="col-12 col-md-4 col-lg-3 mb-4">
+  <div class="row d-flex justify-content-center overflow_content">
+    <div
+      class="col-12 col-md-4 col-lg-3 mb-4"
+      data-aos="zoom-in"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
       <div>
         <img
           src="{% static '/images/image_03.jpg' %}"
@@ -448,7 +606,12 @@
       </div>
     </div>
     <!-- end col item  -->
-    <div class="col-12 col-md-4 col-lg-3 mb-4">
+    <div
+      class="col-12 col-md-4 col-lg-3 mb-4"
+      data-aos="zoom-in"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
       <div>
         <img
           src="{% static '/images/image_03.jpg' %}"
@@ -474,7 +637,12 @@
       </div>
     </div>
     <!-- end col item  -->
-    <div class="col-12 col-md-4 col-lg-3 mb-4">
+    <div
+      class="col-12 col-md-4 col-lg-3 mb-4"
+      data-aos="zoom-in"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
       <div>
         <img
           src="{% static '/images/image_03.jpg' %}"
@@ -508,28 +676,45 @@
   <div class="banner d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-8 col-lg-6">
+        <div class="col-12 col-md-8 col-lg-6 overflow_content">
           <!-- <h1 class="hero_title">
             Let’s Talk
             <span class="hero_title_color">About Your</span> Next Move
           </h1> -->
 
-          <h1 class="hero_title">
+          <h1
+            class="hero_title"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             Ready to Get <span class="hero_title_color">Matched?</span>
           </h1>
-          <p class="text-light mt-4 hero_text paragraph_text">
+          <p
+            class="text-light mt-4 hero_text paragraph_text"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             Whether selling or renting, KC Property Stock connects you with the
             right real estate agency. Contact us today to get started.
           </p>
 
-          <div class="row">
+          <div
+            class="row"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          >
             <div class="col-12 col-md-5 col-lg-4 mb-3">
-              <button
-                type="button"
-                class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
-              >
-                Contact Us<i class="bi bi-arrow-right-circle-fill"></i>
-              </button>
+              <a href="{% url 'contact-us' %}">
+                <button
+                  type="button"
+                  class="btn btn-dark navbar_btn rounded-pill d-flex align-items-center gap-3 border-0 px-4 py-2"
+                >
+                  Contact Us<i class="bi bi-arrow-right-circle-fill"></i>
+                </button>
+              </a>
             </div>
             <div class="col-12 col-md-5 col-lg-4 mb-3">
               <button
@@ -548,21 +733,34 @@
 
 <!-- ======= Reviews  ======= -->
 <section class="review_container">
-  <div class="container">
+  <div class="container overflow_content">
     <center>
-      <p class="section_sub_title text-uppercase">What Our Clients Say</p>
-      <h1 class="section_title mb-4">
+      <p
+        class="section_sub_title text-uppercase"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        What Our Clients Say
+      </p>
+      <h1
+        class="section_title mb-4"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
         Trusted by <span class="title_color">Sellers</span> and Landlords
       </h1>
-      <!-- <p class="text_color mb-5">
-        At KC Property Stock, client satisfaction is our top priority. Here’s
-        what our happy customers have to say about working with us:
-      </p> -->
     </center>
 
-    <div class="row" style="margin-top: 70px">
-      <div class="col-12 col-md-4 mb-5">
-        <div class="service_card h-100 p-4">
+    <div class="row overflow_content" style="margin-top: 45px">
+      <div
+        class="col-12 col-md-4 mb-5"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <div class="service_card h-100 p-4" style="margin-top: 24px">
           <center>
             <div
               class="service_icon_container review_icon_container mb-4 border border-2 border-light"
@@ -581,8 +779,13 @@
         </div>
       </div>
       <!-- end col item  -->
-      <div class="col-12 col-md-4 mb-5">
-        <div class="service_card h-100 p-4">
+      <div
+        class="col-12 col-md-4 mb-5"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <div class="service_card h-100 p-4" style="margin-top: 24px">
           <center>
             <div
               class="service_icon_container review_icon_container mb-4 border border-2 border-light"
@@ -601,8 +804,13 @@
         </div>
       </div>
       <!-- end col item  -->
-      <div class="col-12 col-md-4 mb-5">
-        <div class="service_card h-100 p-4">
+      <div
+        class="col-12 col-md-4 mb-5"
+        data-aos="zoom-in"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+      >
+        <div class="service_card h-100 p-4" style="margin-top: 24px">
           <center>
             <div
               class="service_icon_container review_icon_container mb-4 border border-2 border-light"
