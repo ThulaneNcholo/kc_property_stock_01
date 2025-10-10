@@ -10,4 +10,8 @@ urlpatterns = [
     path('properties', views.PropertiesView, name='properties'),
     path('services', views.ServicesView, name='services'),
     path('contact-us', views.ContactView, name='contact-us'),
+    path('property-areas',
+         views.PropertyAreasView, name='property-areas'),
+    path('private-properties', views.PrivatePropertiesView,
+         name='private-properties'),
 ]

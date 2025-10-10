@@ -76,3 +76,25 @@ def ContactView(request):
     if request.htmx:
         return render(request, "client/contact.html", context)
     return render(request, "client/base.html", context)
+
+
+# ============= Private Properties View =============
+def PrivatePropertiesView(request):
+    context = {
+        "page": "client/private_properties.html",
+    }
+
+    if request.htmx:
+        return render(request, "client/private_properties.html", context)
+    return render(request, "client/base.html", context)
+
+
+# ============= Property Areas View =============
+def PropertyAreasView(request):
+    context = {
+        "page": "client/property_areas.html",
+    }
+
+    if request.htmx:
+        return render(request, "client/property_areas.html", context)
+    return render(request, "client/base.html", context)

@@ -37,21 +37,28 @@
           <a
             class="nav-link navbar_links d-flex align-items-center gap-1"
             href="{% url 'sellers' %}"
-            >Sales Agent
+            >List Property
           </a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link navbar_links d-flex align-items-center gap-1"
             href="{% url 'rental-agent' %}"
-            >Rental Agent
+            >List Rentals
           </a>
         </li>
         <li class="nav-item">
           <a
             class="nav-link navbar_links d-flex align-items-center gap-1"
-            href="{% url 'properties' %}"
-            >Properties
+            href="{% url 'private-properties' %}"
+            >Private Properties
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link navbar_links d-flex align-items-center gap-1"
+            href="{% url 'property-areas' %}"
+            >Property Areas
           </a>
         </li>
         <li class="nav-item">
@@ -111,15 +118,19 @@
       </a>
       <hr class="my-4 mx-3" />
       <a href="{% url 'sellers' %}">
-        <h6 class="menu_title">Sales Agent</h6>
+        <h6 class="menu_title">List Property</h6>
       </a>
       <hr class="my-4 mx-3" />
       <a href="{% url 'rental-agent'%}">
-        <h6 class="menu_title">Rental Agent</h6>
+        <h6 class="menu_title">List Rentals</h6>
       </a>
       <hr class="my-4 mx-3" />
-      <a href="{% url 'properties' %}">
-        <h6 class="menu_title">Properties</h6>
+      <a href="{% url 'private-properties' %}">
+        <h6 class="menu_title">Private Properties</h6>
+      </a>
+      <hr class="my-4 mx-3" />
+      <a href="{% url 'property-areas' %}">
+        <h6 class="menu_title">Property Areas</h6>
       </a>
       <hr class="my-4 mx-3" />
       <a href="{% url 'services' %}">

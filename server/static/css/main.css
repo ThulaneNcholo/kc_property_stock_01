@@ -238,6 +238,28 @@ a {
   color: var(--blue-color);
 }
 
+/* Private Properties  */
+.agencies_icon {
+  color: var(--primary-color);
+  font-size: 17px;
+}
+
+.agencies_title {
+  font-weight: 600;
+}
+
+.agencies_title:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Property Areas Page  */
+.property_areas_titles {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #084643;
+}
+
 /* Review style  */
 .review_container {
   margin-top: 50px;
